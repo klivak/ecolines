@@ -15,10 +15,8 @@ import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
 
 export default {
-  components: { TheFooter, TheHeader },
-}
+  components: {TheFooter, TheHeader},
+};
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

@@ -1,20 +1,14 @@
 <template>
-  <div>
-
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
   name: "BaseModal",
   data() {
-    return {
-
-    }
-  }
-}
+    return {};
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
