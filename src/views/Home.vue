@@ -18,6 +18,12 @@
       </div>
 
       <base-line></base-line>
+
+      <base-sub-nav></base-sub-nav>
+
+      <base-line></base-line>
+
+      <base-nav></base-nav>
     </div>
   </div>
 </template>
@@ -26,10 +32,12 @@
 import BaseButton from "../components/base/BaseButton";
 import BaseCard from "../components/base/BaseCard";
 import BaseLine from "../components/base/BaseLine";
+import BaseSubNav from "../components/base/BaseSubNav";
+import BaseNav from "../components/base/BaseNav";
 
 export default {
   name: "Home",
-  components: {BaseLine, BaseCard, BaseButton},
+  components: {BaseNav, BaseSubNav, BaseLine, BaseCard, BaseButton},
   data() {
     return {
       products: [
