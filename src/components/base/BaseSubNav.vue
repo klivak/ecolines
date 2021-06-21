@@ -49,6 +49,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 26px;
 
   .sub-nav-item {
     font-size: 15px;
