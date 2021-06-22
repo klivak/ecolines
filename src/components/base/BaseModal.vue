@@ -2,7 +2,7 @@
   <div v-if="isVisible" class="base-modal">
     <div class="base-modal-data">
       <div class="base-modal-header">
-        <div @clic.prevent="hideModal" class="modal-header-back">
+        <div @click.prevent="hideModal" class="modal-header-back">
           <svg
             width="6"
             height="8"
@@ -76,7 +76,7 @@ export default {
   z-index: 1000;
 
   &-data {
-    background: #ffffff;
+    background: $base-color-white;
     border-radius: 16px;
     position: relative;
     padding: 45px 0;
@@ -118,7 +118,7 @@ export default {
 
       font-size: 15px;
       line-height: 15px;
-      color: #687a89;
+      color: $base-color-gray-light;
     }
 
     .modal-close-btn {
@@ -134,7 +134,7 @@ export default {
       font-size: 20px;
       line-height: 24px;
       font-weight: 600;
-      color: #2e3b40;
+      color: $base-color-black;
       text-align: center;
     }
   }

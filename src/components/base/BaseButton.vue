@@ -34,7 +34,7 @@ export default {
 
     &.button-primary {
       background: #2faadb;
-      color: #fff;
+      color: $base-color-white;
 
       &:hover {
         background: #4a9bc6;

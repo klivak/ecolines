@@ -54,7 +54,7 @@ export default {
   .sub-nav-item {
     font-size: 15px;
     line-height: 22px;
-    color: #687a89;
+    color: $base-color-gray-light;
     border-radius: 24px;
     padding: 12px 15px;
 
@@ -64,7 +64,7 @@ export default {
 
     &.active {
       font-weight: bold;
-      color: #ffffff;
+      color: $base-color-white;
       background: #4ac6b7;
       box-shadow: 4px 8px 50px -5px rgba(127, 150, 168, 0.2);
     }

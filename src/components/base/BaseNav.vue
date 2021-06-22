@@ -4,7 +4,7 @@
       <a
         v-for="item of navigation"
         :key="item.id"
-        href="#"
+        @click.prevent="setActiveItem(item)"
         class="nav-item"
         :class="{active: item.active}"
         :aria-label="item.name"
@@ -71,6 +71,13 @@ export default {
       ],
     };
   },
+  methods: {
+    setActiveItem(item) {
+      this.navigation.forEach((i) => {
+        i.active = i.id === item.id;
+      });
+    },
+  },
 };
 </script>
 
@@ -90,7 +97,7 @@ export default {
       position: relative;
       font-size: 15px;
       line-height: 22px;
-      color: #687a89;
+      color: $base-color-gray-light;
       padding: 20px 0;
       margin-right: 40px;
       text-decoration: none;
@@ -112,7 +119,7 @@ export default {
 
       &.active {
         font-weight: 600;
-        color: #2e3b40;
+        color: $base-color-black;
 
         &:after {
           opacity: 1;
@@ -128,7 +135,7 @@ export default {
     font-size: 16px;
     line-height: 16px;
     font-weight: 600;
-    color: #2e3b40;
+    color: $base-color-black;
     cursor: pointer;
 
     svg {

@@ -34,7 +34,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: $base-color-white;
   border: 1px solid #f1f1f3;
   box-shadow: 4px 8px 50px -5px rgba(127, 150, 168, 0.2);
   border-radius: 32px;
@@ -65,14 +65,14 @@ export default {
       font-size: 16px;
       line-height: 21px;
       font-weight: bold;
-      color: #2e3b40;
+      color: $base-color-black;
       margin-bottom: 5px;
     }
 
     .card-description {
       font-size: 13px;
       line-height: 18px;
-      color: #687a89;
+      color: $base-color-gray-light;
     }
   }
 
