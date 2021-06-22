@@ -16,6 +16,14 @@
 
           <base-nav></base-nav>
 
+          <div class="checkbox-list">
+            <base-checkbox
+              v-for="i of products2"
+              :key="i.id"
+              :data="i"
+            ></base-checkbox>
+          </div>
+
           <div class="card-list">
             <base-card
               v-for="product in products"
@@ -60,10 +68,19 @@ import BaseLine from "../components/base/BaseLine";
 import BaseSubNav from "../components/base/BaseSubNav";
 import BaseNav from "../components/base/BaseNav";
 import BaseModal from "../components/base/BaseModal";
+import BaseCheckbox from "../components/base/BaseCheckbox";
 
 export default {
   name: "Home",
-  components: {BaseModal, BaseNav, BaseSubNav, BaseLine, BaseCard, BaseButton},
+  components: {
+    BaseCheckbox,
+    BaseModal,
+    BaseNav,
+    BaseSubNav,
+    BaseLine,
+    BaseCard,
+    BaseButton,
+  },
   data() {
     return {
       products: [
@@ -98,6 +115,33 @@ export default {
           desc: "description",
         },
       ],
+
+      products2: [
+        {
+          id: 0,
+          title: "PW & Casement",
+          selected: false,
+          bgVisible: false,
+        },
+        {
+          id: 1,
+          title: "Awning & Hopper",
+          selected: false,
+          bgVisible: false,
+        },
+        {
+          id: 2,
+          title: "Hung",
+          selected: true,
+          bgVisible: false,
+        },
+        {
+          id: 3,
+          title: "Slider",
+          selected: false,
+          bgVisible: true,
+        },
+      ],
     };
   },
   methods: {
@@ -115,6 +159,13 @@ export default {
   }
 
   .card-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .checkbox-list {
     display: flex;
     align-items: center;
     justify-content: center;
